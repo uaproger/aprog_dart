@@ -1,39 +1,50 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# aprog_dart
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages). 
+A lightweight developer utility package for Dart and Flutter projects.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages). 
--->
+`aprog_dart` provides convenient helpers for:
+- colored and formatted console output
+- pretty JSON dumps
+- debug helpers similar to `dump()` / `dd()` from PHP
+- readable stack-aware logging with file & line info
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Ideal for debugging Flutter and Dart CLI applications.
+
+---
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- 🎨 ANSI colored console output
+- 🧱 Bold / colored text helpers
+- 📦 Pretty-printed JSON with indentation
+- 🐞 `dump()` helper with file, line and function context
+- 💀 `dd()` helper (dump & exit) similar to PHP
+- 🧠 Safe handling of large logs (chunked output)
+
+---
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the package to your project:
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
+```bash
+dart pub add aprog_dart
 ```
 
-## Additional information
+---
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+## 3️⃣ CHANGELOG.md (обовʼязково додай версію)
+
+```md
+## 1.0.2
+- Edit README.md
+
+## 1.0.1
+- Updated README with proper package description
+- Improved documentation for dump and color helpers
+
+## 1.0.0
+- Initial release
+- ANSI color helpers
+- dump() and dd() debug utilities
+```
