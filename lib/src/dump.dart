@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'color.dart';
 
 /// Перевірка на формат JSON
-String prettyJson(dynamic data) {
+String prettyJson(dynamic data)
+{
   try {
     dynamic decoded = data;
 
@@ -20,7 +21,8 @@ String prettyJson(dynamic data) {
 }
 
 /// Друк частинами
-void printInChunks(String text, {int chunkSize = 800}) {
+void printInChunks(String text, {int chunkSize = 800})
+{
   for (var i = 0; i < text.length; i += chunkSize) {
     final end = (i + chunkSize < text.length)
       ? i + chunkSize
@@ -30,7 +32,8 @@ void printInChunks(String text, {int chunkSize = 800}) {
 }
 
 /// Друк даних у консоль
-void dump(dynamic data, [int depth = 1, bool path = false]) {
+void dump(dynamic data, [int depth = 1, bool path = false])
+{
   String two(int n) => n.toString().padLeft(2, '0');
 
   final now = DateTime.now();

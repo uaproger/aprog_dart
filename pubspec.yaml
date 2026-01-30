@@ -2,7 +2,7 @@ name: aprog_dart
 description: >
   aprog_dart is a lightweight developer toolkit for Dart and Flutter that provides
   pretty JSON dumps, ANSI-colored console output, stack trace helpers, and dd-style debugging.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/uaproger/aprog_dart
 repository: https://github.com/uaproger/aprog_dart
 

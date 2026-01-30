@@ -3,5 +3,6 @@
 /// More dartdocs go here.
 library;
 
-export 'src/dump.dart';
 export 'src/color.dart';
+export 'src/dump.dart';
+export 'src/helper.dart';

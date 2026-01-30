@@ -50,13 +50,15 @@ const reverse    = '\x1B[7m';   // інверсія
 const hidden     = '\x1B[8m';
 const strike     = '\x1B[9m';   // закреслення
 
-String bold(String text) {
+String bold(String text)
+{
   const bold = '\x1B[1m';
   const reset = '\x1B[0m';
   return '$bold$text$reset';
 }
 
-String color(String ansiColor, String text) {
+String color(String ansiColor, String text)
+{
   const reset = '\x1B[0m';
   return '$ansiColor$text$reset';
 }
@@ -64,10 +66,8 @@ String color(String ansiColor, String text) {
 String rgb(int r, int g, int b) => '\x1B[38;2;$r;$g;${b}m';
 String bgRgb(int r, int g, int b) => '\x1B[48;2;$r;$g;${b}m';
 
-String colorizeJson(
-    dynamic value, {
-      int indent = 0,
-    }) {
+String colorizeJson(dynamic value, {int indent = 0})
+{
   final space = '  ' * indent;
 
   if (value is Map) {

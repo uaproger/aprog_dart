@@ -33,9 +33,14 @@ dart pub add aprog_dart
 
 ---
 
-## 3️⃣ CHANGELOG.md (обовʼязково додай версію)
+## CHANGELOG.md
 
 ```md
+## 1.0.3
+- Додано функцію перевірки на порожність – `isEmpty(value)`
+- Додано функцію перевірки на `null` – `isNull(value)`
+- Додано функцію безпечного парсингу даних – `wrap(value)`
+
 ## 1.0.2
 - Edit README.md
 
