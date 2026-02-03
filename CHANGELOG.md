@@ -1,3 +1,10 @@
+## 1.0.5
+- Додано клас `Storage` для роботи з локальним сховищем (get / set / check / delete)
+- Додано helper для зручного доступу до сховища:
+  ```dart
+  /// Helper for Storage class
+  Storage storage = Storage();
+
 ## 1.0.4
 - Додано функцію опрацювання даних у консолі для iOS – `terminal(value)`
 - Змінено функціонал функції – `wrap(value)`

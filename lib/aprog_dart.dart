@@ -7,3 +7,4 @@ export 'src/color.dart';
 export 'src/dump.dart';
 export 'src/helper.dart';
 export 'src/classes/aprog_wrapper.dart';
+export 'src/classes/storage.dart';

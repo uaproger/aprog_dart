@@ -1,4 +1,5 @@
 import 'package:aprog_dart/src/classes/aprog_wrapper.dart';
+import 'package:aprog_dart/src/classes/storage.dart';
 
 /// Перевірка на порожні дані
 bool isEmpty(dynamic value)
@@ -28,3 +29,6 @@ bool isNull(dynamic value)
 
 /// Допоміжна обгортка для отримання даних
 AprogWrapper wrap(dynamic value) => AprogWrapper(value);
+
+/// Helper for Storage class
+Storage storage = Storage();
