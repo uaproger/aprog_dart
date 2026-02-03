@@ -36,6 +36,10 @@ dart pub add aprog_dart
 ## CHANGELOG.md
 
 ```md
+## 1.0.4
+- Додано функцію опрацювання даних у консолі для iOS – `terminal(value)`
+- Змінено функціонал функції – `wrap(value)`
+
 ## 1.0.3
 - Додано функцію перевірки на порожність – `isEmpty(value)`
 - Додано функцію перевірки на `null` – `isNull(value)`
