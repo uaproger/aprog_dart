@@ -77,12 +77,12 @@ print(config.path('key2.key3'));
 ```dart
 import 'package:aprog/aprog.dart';
 
-await storage.set('user', {
+await Storage.set('user', {
   'name': 'Oleksandr',
   'email': 'test@test.com',
 });
 
-final user = await storage.get<Map<String, dynamic>>('user');
+final user = await Storage.get('user');
 ```
 
 ###### &copy; Copyright AlexProger 2026
