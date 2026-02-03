@@ -1,5 +1,4 @@
 import 'package:aprog_dart/src/classes/aprog_wrapper.dart';
-import 'package:aprog_dart/src/classes/storage.dart';
 
 /// Перевірка на порожні дані
 bool isEmpty(dynamic value)
