@@ -5,7 +5,7 @@ class AprogWrapper {
 
   /// ---------- GET ----------
 
-  AprogWrapper get(dynamic key, [dynamic def]) {
+  AprogWrapper key(dynamic key, [dynamic def]) {
     if (_value == null) return AprogWrapper(def);
 
     if (_value is List) {
@@ -24,13 +24,13 @@ class AprogWrapper {
     return AprogWrapper(def);
   }
 
-  dynamic getValue(dynamic key, [dynamic def]) {
-    return get(key, def)._value;
+  dynamic get(dynamic key, [dynamic def]) {
+    return this.key(key, def)._value;
   }
 
   /// ---------- PATH ----------
 
-  AprogWrapper path(String path, [dynamic def]) {
+  AprogWrapper _path(String path, [dynamic def]) {
     final keys = path.split('.');
     AprogWrapper current = this;
 
@@ -41,8 +41,8 @@ class AprogWrapper {
     return current.isNull ? AprogWrapper(def) : current;
   }
 
-  dynamic pathValue(String path, [dynamic def]) {
-    return this.path(path, def)._value;
+  dynamic path(String path, [dynamic def]) {
+    return _path(path, def)._value;
   }
 
   /// ---------- CHECK ----------
