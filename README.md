@@ -1,66 +1,88 @@
-# aprog_dart
+# 📦 aprog_dart
 
-A lightweight developer utility package for Dart and Flutter projects.
+🇺🇦 **Українська** | 🇬🇧 **English**
 
-`aprog_dart` provides convenient helpers for:
+---
+
+## 🇺🇦 Опис
+
+`aprog_dart` — це легкий утилітарний пакет для розробників на **Dart** та **Flutter**.
+
+Пакет надає зручні хелпери для:
+
+- кольорового та форматованого виводу в консоль
+- красивого (`pretty`) виводу JSON
+- debug-хелперів, подібних до `dump()` / `dd()` з PHP
+- читабельного логування з інформацією про файл і рядок коду
+- безпечного доступу до даних через `AprogWrapper`
+- простого локального сховища (`Storage`)
+
+Ідеально підходить для налагодження Flutter-додатків та Dart CLI-інструментів.
+
+---
+
+## 🇬🇧 Description
+
+`aprog_dart` is a lightweight utility package for **Dart** and **Flutter** developers.
+
+It provides convenient helpers for:
+
 - colored and formatted console output
-- pretty JSON dumps
-- debug helpers similar to `dump()` / `dd()` from PHP
-- readable stack-aware logging with file & line info
+- pretty-printed JSON output
+- debug helpers similar to PHP `dump()` / `dd()`
+- readable logging with file and line information
+- safe data access via `AprogWrapper`
+- simple local storage helper (`Storage`)
 
-Ideal for debugging Flutter and Dart CLI applications.
-
----
-
-## Features
-
-- 🎨 ANSI colored console output
-- 🧱 Bold / colored text helpers
-- 📦 Pretty-printed JSON with indentation
-- 🐞 `dump()` helper with file, line and function context
-- 💀 `dd()` helper (dump & exit) similar to PHP
-- 🧠 Safe handling of large logs (chunked output)
+Ideal for debugging Flutter applications and Dart CLI tools.
 
 ---
 
-## Getting started
+## 🚀 Можливості / Features
 
-Add the package to your project:
+- 🎨 ANSI-кольори / ANSI colored output
+- 🧱 Форматований текст / Styled text helpers
+- 📦 Pretty JSON з відступами / Pretty JSON with indentation
+- 🐞 `dump()` з контекстом файлу та рядка / stack-aware `dump()`
+- 💀 `dd()` (dump & exit)
+- 🧠 Безпечний вивід великих логів / chunked large logs
+- 🧩 `wrap()` / `AprogWrapper` для безпечного доступу до даних
+- 💾 `Storage` для локального сховища
+
+---
+
+## 🛠 Початок роботи / Getting started
 
 ```bash
 dart pub add aprog_dart
 ```
 
----
 
-## CHANGELOG.md
+### 🧩AprogWrapper — приклад / example
+```dart
+import 'package:aprog_dart/aprog_dart.dart';
 
-```md
-## 1.0.5
-- Додано клас `Storage` для роботи з локальним сховищем (get / set / check / delete)
-- Додано helper для зручного доступу до сховища:
-  ```dart
-  /// Helper for Storage class
-  Storage storage = Storage();
+final AprogWrapper config = wrap({
+  'key': 'value',
+  'key2': {
+    'key3': 'value',
+  },
+});
 
-## 1.0.4
-- Додано функцію опрацювання даних у консолі для iOS – `terminal(value)`
-- Змінено функціонал функції – `wrap(value)`
-
-## 1.0.3
-- Додано функцію перевірки на порожність – `isEmpty(value)`
-- Додано функцію перевірки на `null` – `isNull(value)`
-- Додано функцію безпечного парсингу даних – `wrap(value)`
-
-## 1.0.2
-- Edit README.md
-
-## 1.0.1
-- Updated README with proper package description
-- Improved documentation for dump and color helpers
-
-## 1.0.0
-- Initial release
-- ANSI color helpers
-- dump() and dd() debug utilities
+print(config.get('key').val);
+print(config.path('key2.key3').val);
 ```
+
+### 💾 Storage — приклад / example
+```dart
+import 'package:aprog_dart/aprog_dart.dart';
+
+await storage.set('user', {
+  'name': 'Oleksandr',
+  'email': 'test@test.com',
+});
+
+final user = await storage.get<Map<String, dynamic>>('user');
+```
+
+Copyright AlexProger 2026

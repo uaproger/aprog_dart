@@ -1,27 +1,35 @@
+## 1.0.6
+- Незначні внутрішні виправлення та прибирання коду
+- Minor internal fixes and cleanup
+
 ## 1.0.5
-- Додано клас `Storage` для роботи з локальним сховищем (get / set / check / delete)
-- Додано helper для зручного доступу до сховища:
-  ```dart
-  /// Helper for Storage class
-  Storage storage = Storage();
+- Додано клас `Storage` для роботи з локальним сховищем `(get / set / check / delete)`
+- Added `Storage` class for local storage handling
 
 ## 1.0.4
-- Додано функцію опрацювання даних у консолі для iOS – `terminal(value)`
-- Змінено функціонал функції – `wrap(value)`
+- Додано функцію обробки даних у консолі для iOS — `terminal(value)`
+- Оновлено функціонал `wrap(value)`
+- Added iOS console-safe output helper `terminal(value)`
+- Updated `wrap(value)` functionality
 
 ## 1.0.3
-- Додано функцію перевірки на порожність – `isEmpty(value)`
-- Додано функцію перевірки на `null` – `isNull(value)`
-- Додано функцію безпечного парсингу даних – `wrap(value)`
+- Додано `isEmpty(value)`
+- Додано `isNull(value)`
+- Додано безпечний парсер `wrap(value)`
+- Added `isEmpty(value)` helper
+- Added `isNull(value)` helper
+- Added safe data wrapper `wrap(value)`
 
 ## 1.0.2
-- Edit README.md
+- Невеликі правки `README`
+- Minor `README` edits
 
 ## 1.0.1
-- Updated README with proper package description
-- Improved documentation for dump and color helpers
+- Оновлено `README` та документацію
+- Updated `README` and documentation
 
 ## 1.0.0
+- Початковий реліз
 - Initial release
 - ANSI color helpers
-- dump() and dd() debug utilities
+- `dump()` та `dd()` debug utilities

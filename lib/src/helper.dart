@@ -29,6 +29,3 @@ bool isNull(dynamic value)
 
 /// Допоміжна обгортка для отримання даних
 AprogWrapper wrap(dynamic value) => AprogWrapper(value);
-
-/// Helper for Storage class
-Storage storage = Storage();
