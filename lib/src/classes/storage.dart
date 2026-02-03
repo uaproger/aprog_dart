@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:aprog_dart/aprog.dart';
+import 'package:aprog/aprog.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Storage

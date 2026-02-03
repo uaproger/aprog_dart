@@ -1,4 +1,4 @@
-# 📦 aprog_dart
+# 📦 aprog
 
 🇺🇦 **Українська** | 🇬🇧 **English**
 
@@ -54,13 +54,13 @@ Ideal for debugging Flutter applications and Dart CLI tools.
 ## 🛠 Початок роботи / Getting started
 
 ```bash
-dart pub add aprog_dart
+dart pub add aprog
 ```
 
 
 ### 🧩AprogWrapper — приклад / example
 ```dart
-import 'package:aprog_dart/aprog_dart.dart';
+import 'package:aprog/aprog.dart';
 
 final AprogWrapper config = wrap({
   'key': 'value',
