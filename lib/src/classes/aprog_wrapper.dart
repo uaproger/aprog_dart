@@ -35,7 +35,7 @@ class AprogWrapper {
     AprogWrapper current = this;
 
     for (final key in keys) {
-      current = current.get(key);
+      current = current.key(key);
     }
 
     return current.isNull ? AprogWrapper(def) : current;
