@@ -69,13 +69,13 @@ final AprogWrapper config = wrap({
   },
 });
 
-print(config.get('key').val);
-print(config.path('key2.key3').val);
+print(config.get('key'));
+print(config.path('key2.key3'));
 ```
 
 ### 💾 Storage — приклад / example
 ```dart
-import 'package:aprog_dart/aprog_dart.dart';
+import 'package:aprog/aprog.dart';
 
 await storage.set('user', {
   'name': 'Oleksandr',
@@ -85,4 +85,4 @@ await storage.set('user', {
 final user = await storage.get<Map<String, dynamic>>('user');
 ```
 
-Copyright AlexProger 2026
+###### &copy; Copyright AlexProger 2026
