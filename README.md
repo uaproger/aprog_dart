@@ -48,6 +48,7 @@ Ideal for debugging Flutter applications and Dart CLI tools.
 - 🧠 Безпечний вивід великих логів / chunked large logs
 - 🧩 `wrap()` / `AprogWrapper` для безпечного доступу до даних
 - 💾 `Storage` для локального сховища
+- 📅 Функція `date()` за прикладом як у PHP
 
 ---
 
@@ -83,6 +84,21 @@ await Storage.set('user', {
 });
 
 final user = await Storage.get('user');
+```
+
+### 📅 date() - приклад / example
+```dart
+import 'package:aprog/aprog.dart';
+
+// Поточна дата
+print(date('Y-m-d H:i:s')); // Виведе: 2026-02-09 15:34:36
+
+// Тільки рік та місяць
+print(date('d.m.Y')); // Виведе: 09.02.2026
+
+// Для конкретної дати (наприклад, день народження)
+DateTime birthday = DateTime(1990, 10, 22);
+print(date('d-m-Y', birthday)); // Виведе: 22-10-1990
 ```
 
 ###### &copy; Copyright AlexProger 2026
